@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokerface.RazorApp", "Pokerface.RazorApp\Pokerface.RazorApp.csproj", "{9674C84E-64CF-4BB8-9D31-70C0841F27E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokerface.RazorApp", "Pokerface.RazorApp\Pokerface.RazorApp.csproj", "{9674C84E-64CF-4BB8-9D31-70C0841F27E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokerface.Contracts", "Pokerface.Contracts\Pokerface.Contracts.csproj", "{3D671031-FC46-46B9-BF49-77EB27B1414F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokerface.Infrustructure", "Pokerface.Infrustructure\Pokerface.Infrustructure.csproj", "{66C2253C-97AF-4590-97A0-BBE9D111BCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokerface.Repository", "Pokerface.Repository\Pokerface.Repository.csproj", "{4C994649-E503-466C-8A58-650666D9E33B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{9674C84E-64CF-4BB8-9D31-70C0841F27E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9674C84E-64CF-4BB8-9D31-70C0841F27E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9674C84E-64CF-4BB8-9D31-70C0841F27E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D671031-FC46-46B9-BF49-77EB27B1414F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D671031-FC46-46B9-BF49-77EB27B1414F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D671031-FC46-46B9-BF49-77EB27B1414F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D671031-FC46-46B9-BF49-77EB27B1414F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66C2253C-97AF-4590-97A0-BBE9D111BCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66C2253C-97AF-4590-97A0-BBE9D111BCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66C2253C-97AF-4590-97A0-BBE9D111BCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66C2253C-97AF-4590-97A0-BBE9D111BCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C994649-E503-466C-8A58-650666D9E33B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C994649-E503-466C-8A58-650666D9E33B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C994649-E503-466C-8A58-650666D9E33B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C994649-E503-466C-8A58-650666D9E33B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
