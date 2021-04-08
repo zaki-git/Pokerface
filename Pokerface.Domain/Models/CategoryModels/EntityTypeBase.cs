@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Pokerface.Infrustructure.Domain.Models.CategoryModels
+namespace Pokerface.Domain.Models.CategoryModels
 {
     public class EntityTypeBase
     {

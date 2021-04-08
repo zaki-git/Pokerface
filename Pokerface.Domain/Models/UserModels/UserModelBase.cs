@@ -1,9 +1,7 @@
-﻿using Pokerface.Infrustructure.Domain.Enums;
+﻿using Pokerface.Domain.Enums;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Pokerface.Infrustructure.Domain.Models.UserModels
+namespace Pokerface.Domain.Models.UserModels
 {
     public class UserModelBase
     {
