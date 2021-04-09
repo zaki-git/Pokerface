@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Pokerface.Contracts.ServiceContracts;
+using Pokerface.Domain.Models.CategoryModels;
+using Pokerface.Infrustructure.Services;
+using Pokerface.Repository.DataAccess;
+using Pokerface.Repository.Repositories;
 
 namespace Pokerface.RazorApp
 {
@@ -24,6 +25,17 @@ namespace Pokerface.RazorApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddDbContext<PokerfaceContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("Prod")));
+
+
+            #region Regiter App Services
+            // Services
+            services.AddScoped<ICategoryService, CategoryService>();
+
+            // Repositories
+            services.AddScoped<IGenericRepository<Category>, CategoryRepository>();
+            #endregion
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +63,7 @@ namespace Pokerface.RazorApp
             {
                 endpoints.MapRazorPages();
             });
+
         }
     }
 }
